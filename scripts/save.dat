@@ -1,0 +1,5 @@
+sync(~/Programmes/Projets/DeviceDataManager/dsync/, D/sdest/){
+}
+
+back(~/Programmes/Projets/DeviceDataManager/dback/, D/bdest/){ 
+}
