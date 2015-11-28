@@ -1,4 +1,8 @@
 sync(~/Programmes/Projets/DeviceDataManager/dsync/, D/sdest/){
+./coucou/test
+halla/ackbar.tst
+/where/is/bryan.dat
+/this/is/my/life/
 }
 
 back(~/Programmes/Projets/DeviceDataManager/dback/, D/bdest/){ 

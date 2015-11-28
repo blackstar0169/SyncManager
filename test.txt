@@ -1,0 +1,4 @@
+sync(./super/dir/, $D/dest/sync){
+	./path/src
+	$D/path/dest
+}
