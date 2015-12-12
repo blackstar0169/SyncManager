@@ -4,7 +4,7 @@
 
 #include "Function.h"
 #include "Reader.h"
-
+#include "Sync.h"
 
 using namespace std;
 
@@ -16,19 +16,10 @@ int main(void){
 	rdr.open();
 	f=rdr.next();
 
-	cout<<"Function : "<<f.getName()<<endl;
-	for(int i=0; i<f.countArguments();i++)
-		cout<<"arg"<<i<<" : "<<f.getArgument(i)<<endl;
-	for(int i=0; i<f.countPaths();i++)
-		cout<<"path"<<i<<" : "<<f.getPath(i)<<endl;
-
-	f=rdr.next();
-
-	cout<<"Function : "<<f.getName()<<endl;
-	for(int i=0; i<f.countArguments();i++)
-		cout<<"arg"<<i<<" : "<<f.getArgument(i)<<endl;
-	for(int i=0; i<f.countPaths();i++)
-		cout<<"path"<<i<<" : "<<f.getPath(i)<<endl;
+	Sync synchronizer("tstdir", "tstdir");
+	int res = synchronizer.run();
+	if(res<0)
+		cout << "ERROR : "<<res<<endl;
 
 
 	return 0;
